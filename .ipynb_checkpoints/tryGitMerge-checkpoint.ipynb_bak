@@ -2,132 +2,6 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 2,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "total 3\n",
-      "drwxrwxrwx 2 root root    0 Nov 14  2017 .\n",
-      "drwxrwxrwx 2 root root    0 Nov 14  2017 ..\n",
-      "-rwxrwxrwx 1 root root 1675 Nov 14  2017 id_rsa\n",
-      "-rwxrwxrwx 1 root root  415 Nov 14  2017 id_rsa.pub\n",
-      "-rwxrwxrwx 1 root root  392 Apr  8 02:35 known_hosts\n",
-      "total 24\n",
-      "drwx------ 2 jrun jrun 4096 Apr  8 03:17 .\n",
-      "drwxr-xr-x 1 jrun jrun 4096 Apr  8 02:40 ..\n",
-      "-r-------- 1 jrun jrun 1675 Apr  8 03:17 id_rsa\n",
-      "-rwxr-xr-x 1 jrun jrun  415 Apr  8 03:17 id_rsa.pub\n",
-      "-rwxr-xr-x 1 jrun jrun 1276 Apr  8 03:22 known_hosts\n",
-      "total 24\n",
-      "drwx------ 2 jrun jrun 4096 Apr  8 03:41 .\n",
-      "drwxr-xr-x 1 jrun jrun 4096 Apr  8 02:40 ..\n",
-      "-r-------- 1 jrun jrun 1675 Apr  8 03:41 id_rsa\n",
-      "-rwxr-xr-x 1 jrun jrun  415 Apr  8 03:41 id_rsa.pub\n",
-      "-rwxr-xr-x 1 jrun jrun  392 Apr  8 03:41 known_hosts\n",
-      "~~~ -----------------------------------------------\n",
-      "/mnt/juliabox/JuliaBox_Sync\n",
-      "total 25508\n",
-      "drwxrwxrwx 2 root root        0 Apr  8 02:35 .\n",
-      "drwxrwxrwx 2 root root        0 Nov 14  2017 ..\n",
-      "drwxrwxrwx 2 root root        0 Apr  8 02:35 .git\n",
-      "drwxrwxrwx 2 root root        0 Apr  8 02:37 .ipynb_checkpoints\n",
-      "-rwxrwxrwx 1 root root    46413 Apr  8 01:01 RCall_tryStan_2.ipynb\n",
-      "-rwxrwxrwx 1 root root       15 Apr  8 02:35 README.md\n",
-      "-rwxrwxrwx 1 root root    70203 Apr  8 02:35 Tutorial.ipynb\n",
-      "-rwxrwxrwx 1 root root 13976523 Apr  8 01:01 misreport.rds\n",
-      "-rwxrwxrwx 1 root root     2569 Apr  8 01:01 misreport.stan\n",
-      "-rwxrwxrwx 1 root root     2136 Apr  8 01:01 run_rstan.R\n",
-      "-rwxrwxrwx 1 root root 11561162 Apr  8 01:01 simu_GP.rds\n",
-      "-rwxrwxrwx 1 root root      835 Apr  8 01:01 simu_GP.stan\n",
-      "-rwxrwxrwx 1 root root     3663 Apr  8 01:01 stan_utility.R\n",
-      "-rwxrwxrwx 1 root root   447747 Apr  8 03:35 tryGitMerge.ipynb\n",
-      "-rwxrwxrwx 1 root root     5117 Apr  8 01:01 tryStan_2.R\n",
-      "commit dd641463a716c23502f95bcc9ea464b5365fe5bd\n",
-      "Author: tlyim <acdryim@gmail.com>\n",
-      "Date:   Mon Apr 8 03:22:55 2019 +0000\n",
-      "\n",
-      "    first commit\n",
-      "\n",
-      "commit 37b6b7b70f11b70d119a741d9ebdc6181a4248b1\n",
-      "Author: Tl Yim <acdryim@gmail.com>\n",
-      "Date:   Wed Mar 28 18:29:24 2018 +0100\n",
-      "\n",
-      "    add Tutorial.ipnb\n",
-      "\n",
-      "commit de231a24f1224552b1070281aca4b1db622555c3\n",
-      "Author: tlyim <tlyim@users.noreply.github.com>\n",
-      "Date:   Sun Sep 10 21:45:59 2017 +0100\n",
-      "\n",
-      "    Initial commit\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.\r\n"
-     ]
-    },
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "Already up-to-date.\n",
-      "[master 2c1aa40] workflow to sync with github repo\n",
-      " 1 file changed, 7843 insertions(+)\n",
-      " create mode 100755 tryGitMerge.ipynb\n"
-     ]
-    },
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "To git@github.com:tlyim/JuliaBox_Sync.git\n",
-      "   dd64146..2c1aa40  master -> master\n"
-     ]
-    },
-    {
-     "data": {
-      "text/plain": [
-       "Process(`\u001b[4mgit\u001b[24m \u001b[4mpush\u001b[24m \u001b[4morigin\u001b[24m \u001b[4mmaster\u001b[24m`, ProcessExited(0))"
-      ]
-     },
-     "execution_count": 2,
-     "metadata": {},
-     "output_type": "execute_result"
-    }
-   ],
-   "source": [
-    "cd(\"/mnt/juliabox/.ssh\")\n",
-    "run(`ls -la .`)\n",
-    "run(`ls -la  /home/jrun/.ssh`)\n",
-    "run(`cp -Rf /mnt/juliabox/.ssh/id_rsa /home/jrun/.ssh `)\n",
-    "run(`cp -Rf /mnt/juliabox/.ssh/id_rsa.pub /home/jrun/.ssh `)\n",
-    "run(`cp -Rf /mnt/juliabox/.ssh/known_hosts /home/jrun/.ssh `)\n",
-    "#run(`chmod g-w,o-w /home/jrun/.ssh/id_rsa `)\n",
-    "run(`chmod 400 /home/jrun/.ssh/id_rsa `)\n",
-    "run(`ls -la  /home/jrun/.ssh`)\n",
-    "run(`echo ~~~ ----------------------------------------------- `)\n",
-    "\n",
-    "cd(\"/mnt/juliabox/JuliaBox_Sync\")\n",
-    "run(`pwd`)\n",
-    "run(`ls -al `)\n",
-    "\n",
-    "run(`git log `)\n",
-    "run(`git pull `)\n",
-    "#run(`git add . `)    # stage all changed files in directory .\n",
-    "#run(`git commit -m \"first commit\" `)\n",
-    "run(`git add tryGitMerge.ipynb `)    # stage all changed files in directory .\n",
-    "run(`git commit -m \"workflow to sync with github repo\" `)\n",
-    "\n",
-    "run(`git push origin master`)\n"
-   ]
-  },
-  {
-   "cell_type": "code",
    "execution_count": 32,
    "metadata": {
     "scrolled": true
@@ -178,10 +52,8 @@
    "source": [
     "run(`git log `)\n",
     "run(`git pull `)\n",
-    "#run(`git add . `)    # stage all changed files in directory .\n",
+    "run(`git add . `)    # stage all changed files in directory .\n",
     "#run(`git commit -m \"first commit\" `)\n",
-    "run(`git add tryGitMerge.ipynb `)    # stage all changed files in directory .\n",
-    "run(`git commit -m \"workflow to sync with github repo\" `)\n",
     "\n",
     "run(`git push origin master`)\n",
     "\n"
